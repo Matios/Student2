@@ -1,7 +1,5 @@
 package com.student;
 
-import java.util.List;
-
 import org.springframework.http.MediaType;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -29,8 +27,8 @@ public class StudentController {
 //	@PostMapping("/students")
 //	Student newStudent(@RequestBody Student newStudent) {
 //		return repository.save(newStudent);
-//	}
-//	
+//	}	
+	
 	@PostMapping(value="/students",consumes=MediaType.APPLICATION_FORM_URLENCODED_VALUE)
 	Student newStudent(@RequestBody MultiValueMap<String, String> formData) {
 		Student stud = new Student();
@@ -39,6 +37,7 @@ public class StudentController {
 		
 		return repository.save(stud);
 	}
+	
 	@GetMapping("/student/{id}")
 	Student one(@PathVariable Long id) {
 		return repository.findById(id).orElseThrow(() -> new StudentNotFoundException(id));

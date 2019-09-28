@@ -1,3 +1,42 @@
 ul{
 	list-style-type:decimal;
 }
+
+form{
+  width : 20%;
+  height : 30%;
+  margin : 50px 50px;
+  background : #80ffff;
+  
+}
+
+ul{
+	color : red;
+}
+ 
+#superButton{
+	color : #ff8000;
+	border-radius: 12px;
+}
+
+#name{
+	margin-top: 10px
+}
+
+#email{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#button1{
+	color : red;
+	border-radius : 8px;
+	margin-left : 50px;
+	background-color: blue;
+}
+
+#btn{
+	color : Green;
+	border-radius: 10px;
+	margin-left: 50px;
+}
